@@ -5,7 +5,7 @@
         "iso_checksum_type": "sha1",
         "ssh_timeout": "5m",
         "country": "US",
-        "headless": "false"
+        "headless": "true"
     },
     "builders": [
         {
@@ -27,7 +27,6 @@
             "ssh_username": "root",
             "ssh_password": "password",
             "ssh_timeout": "{{ user `ssh_timeout` }}",
-            "vm_name": "arch_linux_disk_000",
             "shutdown_command": "shutdown -P now"
         },
         {
@@ -51,6 +50,7 @@
             "ssh_password": "password",
             "ssh_timeout": "{{ user `ssh_timeout` }}",
             "shutdown_command": "shutdown -P now",
+            "vm_name": "packer-arch_linux_disk_000",
             "format": "ova"
         },
         {
