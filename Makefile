@@ -4,4 +4,9 @@ build:
 
 .PHONY: import-box
 import-box:
-	vagrant box add --force --name packer-archlinux packer_arch_2018-08-01_US.box 
+	vagrant box add --force --name packer-archlinux packer_arch_2018-08-01_US.box
+
+.PHONY: clean
+clean:
+	rm -rf output* \
+		*.box
