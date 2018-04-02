@@ -139,6 +139,10 @@ provisioning. My intention was to duplicate a DigitalOcean VPS and
 furthermore use the VM for testing [Ansible](http://www.ansible.com/)
 playbooks for configuration management.
 
+## Inspiration
+
+Inspired from [elasticdog](https://github.com/elasticdog/packer-arch)
+
 ## Liscence
 
 [MIT](https://fr.wikipedia.org/wiki/Licence_MIT)
